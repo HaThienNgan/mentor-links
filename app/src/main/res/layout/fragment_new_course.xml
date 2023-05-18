@@ -20,7 +20,7 @@
                 android:id="@+id/view_page"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:listitem="@layout/content_new_course"/>
+                tools:listitem="@layout/content_new_course" />
 
         </ScrollView>
 
@@ -30,8 +30,7 @@
             android:layout_marginTop="5dp"
             android:layout_height="40dp"
             app:ci_drawable="@drawable/bg_indicator"
-            android:layout_gravity="center"/>
-
+            android:layout_gravity="center" />
 
     </LinearLayout>
 
