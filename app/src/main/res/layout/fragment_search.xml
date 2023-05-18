@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/header"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="  Tên học viên, lĩnh vực, giáo viên, ..."
+                    android:background="@color/white" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="45dp"
+                    android:background="#B6B1B1"/>
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="49dp"
+                    android:src="@drawable/baseline_search_24"
+                    android:background="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:alpha="1"
+                android:orientation="vertical" >
+
+                <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSearchTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frameListSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

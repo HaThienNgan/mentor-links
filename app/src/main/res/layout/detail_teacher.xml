@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginLeft="16dp"
+android:layout_marginRight="16dp"
+android:orientation="vertical">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/course_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#FFFAFA"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_margin="8dp"
+                android:src="@drawable/avatar"
+                android:layout_gravity="center"
+                app:shapeAppearanceOverlay="@style/roundimageview_1">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/tvfullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="LINH NGUYỄN"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Giáo viên"
+                android:textColor="#FF9800"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvexperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Cố vấn cao cấp cho phát triển giáo dục (2020 - Hiện tại) Cung cấp các dịch vụ tư vấn và đào tạo về phát triển và quản trị các tổ chức giáo dục từ đại học đến mầm non. Dịch vụ bao gồm đánh giá hoạt động của tổ chức, xây dựng chiến lược phát triển ngắn hạn và dài hạn, tư vấn triển khai và đào tạo đội ngũ lãnh đạo. Sáng lập và phát triển ..."
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="0.1"
+                    android:text="Tags: "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvurl_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    android:text="Sức khỏe"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+
+</LinearLayout>
