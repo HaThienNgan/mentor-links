@@ -154,7 +154,7 @@ public class SearchListFragment extends Fragment {
             try {
                 JSONArray jsonArray = new JSONArray(s);
                 int result = jsonArray.length();
-                tvResult.setText(result + " kết quả tìm kiếm ");
+                tvResult.setText(result + " kết quả tìm kiếm");
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject rootObject = jsonArray.getJSONObject(i);
                     //get data
