@@ -38,5 +38,10 @@
         <item name="cornerSize">60dp</item>
         <item name="color">@color/white</item>
     </style>
+    <style name="roundimageview_2" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+        <item name="color">@color/white</item>
+    </style>
 
 </resources>

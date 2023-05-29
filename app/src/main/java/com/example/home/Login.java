@@ -72,6 +72,8 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
+
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
