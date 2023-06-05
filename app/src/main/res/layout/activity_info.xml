@@ -168,7 +168,7 @@
                             android:textStyle="bold" />
 
                         <com.google.android.material.textfield.TextInputLayout
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -178,10 +178,9 @@
                                 android:layout_width="250dp"
                                 android:layout_height="40dp"
                                 android:layout_gravity="center"
-                                android:layout_marginLeft="8dp"
+                                android:layout_marginLeft="5dp"
                                 android:layout_marginRight="16dp"
-                                android:hint="Phan Thị Ngọc Lan" />
-
+                                android:hint="19001684" />
                         </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
 
@@ -200,7 +199,7 @@
                             android:textStyle="bold" />
 
                         <com.google.android.material.textfield.TextInputLayout
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -312,7 +311,7 @@
                             android:textStyle="bold" />
 
                         <com.google.android.material.textfield.TextInputLayout
-                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -375,19 +374,19 @@
                                     <RadioButton
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Sinh viên" />
 
                                     <RadioButton
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Người đi làm" />
 
                                     <RadioButton
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Tự do (Freelancer)" />
                                 </RadioGroup>
                             </LinearLayout>
@@ -404,7 +403,7 @@
                                 android:orientation="vertical">
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="16dp"
@@ -418,7 +417,7 @@
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="16dp"
@@ -435,7 +434,7 @@
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="16dp"
@@ -449,7 +448,7 @@
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
-                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="16dp"
@@ -509,21 +508,21 @@
                                 android:id="@+id/checkBoxHealth"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
+                                android:layout_marginTop="-8dp"
                                 android:text="Sức khỏe" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxBusiness"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
+                                android:layout_marginTop="-8dp"
                                 android:text="Kinh Doanh" />
 
                             <CheckBox
                                 android:id="@+id/checkBoxDevelopment"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-16dp"
+                                android:layout_marginTop="-8dp"
                                 android:text="Phát triển cá nhân" />
 
                         </LinearLayout>
@@ -586,56 +585,56 @@
                                         android:id="@+id/checkBox6"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Kinh tế" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox7"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Khoa học Tự nhiên" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox8"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Kỹ thuật" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox9"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Thiết kế" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox10"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Nghệ thuật" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox11"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Sức khỏe" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox12"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Luật" />
 
                                     <CheckBox
                                         android:id="@+id/checkBox13"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Khác" />
                                 </LinearLayout>
 
@@ -660,31 +659,31 @@
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Running" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Cycling" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Swimming" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Gym training" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Khác" />
 
                                 </LinearLayout>
@@ -709,7 +708,7 @@
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="SME" />
 
                                     <CheckBox
@@ -721,19 +720,19 @@
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Lãnh dạo" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Quản trị" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Khác" />
 
                                 </LinearLayout>
@@ -758,31 +757,31 @@
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Quan hệ công chúng" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Tình cảm" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Gia đình" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Trị liệu tâm lí" />
 
                                     <CheckBox
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="-16dp"
+                                        android:layout_marginTop="-8dp"
                                         android:text="Khác" />
 
                                 </LinearLayout>

@@ -95,51 +95,66 @@ public class Info extends AppCompatActivity {
         boolean isCheckedDev = checkboxDevelopment.isChecked();
 
 
-        updateTextVisibility(isCheckedEdu);
-        updateTextVisibility(isCheckedHealth);
-        updateTextVisibility(isCheckedBusiness);
-        updateTextVisibility(isCheckedDev);
+        updateTextVisibilityEdu(isCheckedEdu);
+        updateTextVisibilityHealth(isCheckedHealth);
+        updateTextVisibilityBusiness(isCheckedBusiness);
+        updateTextVisibilityDev(isCheckedDev);
 
         checkBoxEducation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean isChecked = ((CheckBox)v).isChecked();
-                updateTextVisibility(isChecked);
+                updateTextVisibilityEdu(isChecked);
             }
         });
         checkBoxHealth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean isChecked = ((CheckBox)v).isChecked();
-                updateTextVisibility(isChecked);
+                updateTextVisibilityHealth(isChecked);
             }
         });
         checkBoxBusiness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean isChecked = ((CheckBox)v).isChecked();
-                updateTextVisibility(isChecked);
+                updateTextVisibilityBusiness(isChecked);
             }
         });
         checkboxDevelopment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean isChecked = ((CheckBox)v).isChecked();
-                updateTextVisibility(isChecked);
+                updateTextVisibilityDev(isChecked);
             }
         });
     }
 
-    private void updateTextVisibility(boolean isChecked){
+    private void updateTextVisibilityEdu(boolean isChecked){
         if(isChecked) {
             linearLayoutEducation.setVisibility(View.VISIBLE);
-            linearLayoutHealth.setVisibility(View.VISIBLE);
-            linearLayoutBusiness.setVisibility(View.VISIBLE);
-            linearLayoutDevelopment.setVisibility(View.VISIBLE);
         } else {
             linearLayoutEducation.setVisibility(View.INVISIBLE);
+        }
+    }
+    private void updateTextVisibilityHealth(boolean isChecked){
+        if(isChecked) {
+            linearLayoutHealth.setVisibility(View.VISIBLE);
+        } else {
             linearLayoutHealth.setVisibility(View.INVISIBLE);
+        }
+    }
+    private void updateTextVisibilityBusiness(boolean isChecked){
+        if(isChecked) {
+            linearLayoutBusiness.setVisibility(View.VISIBLE);
+        } else {
             linearLayoutBusiness.setVisibility(View.INVISIBLE);
+        }
+    }
+    private void updateTextVisibilityDev(boolean isChecked){
+        if(isChecked) {
+            linearLayoutDevelopment.setVisibility(View.VISIBLE);
+        } else {
             linearLayoutDevelopment.setVisibility(View.INVISIBLE);
         }
     }
@@ -153,7 +168,7 @@ public class Info extends AppCompatActivity {
                 mDialog.setContentView(R.layout.info_popup_right);
                 Window window = mDialog.getWindow();
                 WindowManager.LayoutParams params = window.getAttributes();
-//                params.width = (Resources.getSystem().getDisplayMetrics().widthPixels * 30) / 30;
+//                params.width = (Resources.getSystem().getDisplayMetrics().widthPixels * 50) / 100;
 //                params.height = WindowManager.LayoutParams.MATCH_PARENT;
                 params.gravity = Gravity.TOP|Gravity.RIGHT|Gravity.BOTTOM;
                 window.setAttributes(params);
@@ -165,13 +180,13 @@ public class Info extends AppCompatActivity {
         btn_nav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDialog.setContentView(R.layout.popup_menu);
+                mDialog.setContentView(R.layout.info_popup_nav);
                 Window window = mDialog.getWindow();
                 WindowManager.LayoutParams params = window.getAttributes();
-                //params.width = WindowManager.LayoutParams.MATCH_PARENT;
-                params.width = (Resources.getSystem().getDisplayMetrics().widthPixels * 98) / 100;
-                params.height = (Resources.getSystem().getDisplayMetrics().heightPixels * 70) / 100;
-                params.gravity = Gravity.BOTTOM;
+                params.width = WindowManager.LayoutParams.MATCH_PARENT;
+                params.width = (Resources.getSystem().getDisplayMetrics().widthPixels * 30) / 100;
+                params.height = (Resources.getSystem().getDisplayMetrics().heightPixels * 105) / 100;
+                params.gravity = Gravity.LEFT|Gravity.TOP;
                 window.setAttributes(params);
                 mDialog.show();
             }

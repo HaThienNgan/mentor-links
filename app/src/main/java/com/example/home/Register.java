@@ -32,7 +32,7 @@ public class Register extends AppCompatActivity {
         tvLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register.this, MainActivity.class);
+                Intent intent = new Intent(Register.this, Login.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class Register extends AppCompatActivity {
         toolbar = findViewById(R.id.toolBar);
 //        drawerLayout = findViewById(R.id.drawerLayout);
 //        navigationView = findViewById(R.id.navigationView);
-        btnMenuBottom = findViewById(R.id.btn_bottom);
-        btnRightMenu = findViewById(R.id.btn_menu);
+        btnMenuBottom = findViewById(R.id.btnMenuBottom);
+        btnRightMenu = findViewById(R.id.btnRightMenu);
     }
 }

@@ -1,43 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="300dp"
-    android:layout_height="wrap_content"
+    android:layout_width="250dp"
+    android:layout_height="400dp"
     android:orientation="vertical"
-    android:layout_margin="32dp"
     android:layout_gravity="right">
 
     <TextView
+        android:id="@+id/tvIntroductionMenu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:text="GIỚI THIỆU"
         android:textColor="@color/blue"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:text="KHÁM PHÁ KHÓA HỌC"
         android:textColor="@color/blue"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvLoginRegister"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:text="ĐĂNG NHẬP/ ĐĂNG KÍ"
         android:textColor="@color/blue"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
     <View
         android:layout_width="50dp"
         android:layout_height="2dp"
         android:layout_gravity="left"
-        android:layout_marginLeft="16dp"
-        android:background="@color/blue"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue" />
 </LinearLayout>

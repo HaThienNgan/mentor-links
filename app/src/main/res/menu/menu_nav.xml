@@ -2,24 +2,25 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn = "navigation_view">
+    tools:showIn = "navigation_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group
-        android:checkableBehavior="single" >
+        android:checkableBehavior="single">
         <item
         android:checkableBehavior="single"
         android:id="@+id/nav_introduction"
-        android:title="GIỚI THIỆU" />
+        android:title="Khóa học của Tôi" />
 
         <item
             android:checkableBehavior="single"
             android:id="@+id/nav_explorecourse"
-            android:title="KHÁM PHÁ KHÓA HỌC" />
+            android:title="Hồ sơ học viên" />
 
         <item
             android:checkableBehavior="single"
             android:id="@+id/nav_signin_register"
-            android:title="ĐĂNG NHẬP/ĐĂNG XUẤT" />
+            android:title="Đổi mật khẩu" />
 
     </group>
 

@@ -15,6 +15,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Dialog mDialog;
     ImageButton btn_bottom;
     ImageButton btn_menu;
+    TextView tvLoginRegisterMenu;
     TextView searchFragment, newCourseFragment, highlightFragment;
 
     @SuppressLint("MissingInflatedId")
@@ -69,6 +71,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         searchFragment.setOnClickListener(this::onClick);
         newCourseFragment.setOnClickListener(this::onClick);
         highlightFragment.setOnClickListener(this::onClick);
+
+
+        //Link
+//        tvLoginRegisterMenu = findViewById(R.id.tvLoginRegister);
+//        tvLoginRegisterMenu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, Login.class);
+//                startActivity(intent);
+//            }
+//        });
     }
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -91,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 params.height = (Resources.getSystem().getDisplayMetrics().heightPixels * 70) / 100;
                 params.gravity = Gravity.BOTTOM;
                 window.setAttributes(params);
+
                 mDialog.show();
             }
 
@@ -101,10 +115,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mDialog.setContentView(R.layout.popup_menu);
                 Window window = mDialog.getWindow();
                 WindowManager.LayoutParams params = window.getAttributes();
-                params.width = (Resources.getSystem().getDisplayMetrics().widthPixels * 100) / 100;
+                params.width = (Resources.getSystem().getDisplayMetrics().widthPixels * 70) / 100;
                 params.height = WindowManager.LayoutParams.MATCH_PARENT;
                 params.gravity = Gravity.TOP|Gravity.RIGHT|Gravity.BOTTOM;
                 window.setAttributes(params);
+
+                tvLoginRegisterMenu = mDialog.findViewById(R.id.tvLoginRegister);
+                tvLoginRegisterMenu.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, Login.class);
+                        startActivity(intent);
+                    }
+                });
+
                 mDialog.show();
             }
 
